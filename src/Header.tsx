@@ -1,6 +1,6 @@
 import { Heart, Search } from "lucide-react";
 import { useState } from "react";
-function Header() {
+function div() {
 
     const[ input, setInput] = useState('')
 
@@ -11,7 +11,8 @@ function Header() {
             setInput('');
     }
   return (
-    <header className=' flex items-center justify-between mx-5 fixed top-0'>
+    <header className=" w-full border-b border-gray-700 ">
+    <div className=' flex items-center justify-between mx-5'>
         {/* image */}
     <img src="/src/assets/instagram-logo (1).png" alt=""  className='w-48 h-32 object-contain '/>
    
@@ -31,8 +32,10 @@ function Header() {
     {/* icon */}
         
     </div>
+    </div>
+    
     </header>
   )
 }
  
-export default Header;
+export default div;
